@@ -35,27 +35,3 @@
 body {
   background-color: #37343C;
 }
-
-.wordChange {
-  color: #5BE9B9;
-}
-
-.bg-color-green {
-  background-color: #5BE9B9;
-}
-
-.greenLine {
-  height: 75vh;
-}
-
-.slim {
-  width: 10px;
-}
-
-.superFont {
-  font-size: 5rem;
-}
-
-.introSection {
-  height: 85vh;
-}
