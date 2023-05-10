@@ -30,4 +30,28 @@
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
-}/*# sourceMappingURL=index.css.map */
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.aboutImage, .aboutSummary {
+  grid-row: 2;
+}
+
+.aboutImage {
+  width: 550px;
+  height: 700px;
+  grid-column: 2/5;
+}
+
+.aboutSummary {
+  grid-column: 4/6;
+  align-self: center;
+}
+
+.aboutTitle {
+  grid-column: 1/4;
+}/*# sourceMappingURL=about.css.map */

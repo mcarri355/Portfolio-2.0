@@ -1,8 +1,3 @@
-// Animation For Nav Button
-function hamburger(x){
-    x.classList.toggle("change");
-}
-
 // // Hacker Animation For Word Rotation
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -32,5 +27,3 @@ function hamburger(x){
 //     iteration += 1 / 3;
 //   }, 60 );
 // }
-
-// $('greenBar')

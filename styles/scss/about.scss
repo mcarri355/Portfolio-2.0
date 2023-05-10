@@ -1,15 +1,15 @@
-// Colors and Fonts
 $main-color: #6E07F3;
 $secondary-color: #5BE9B9;
 $tertiary-color: #8F37FF;
 $bg-color: #37343C;
+
 @font-face {
     font-family: myFont;
     src: url(../../fonts/CodaCaption-ExtraBold.ttf);
 }
 
 // font class
-.font{
+.font {
     font-family: 'myFont';
 }
 
@@ -20,13 +20,13 @@ $bg-color: #37343C;
     background-color: $main-color;
 }
 
-.bar{
+.bar {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
-}   
+}
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
@@ -38,4 +38,29 @@ $bg-color: #37343C;
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+// About Me Image/Summary
+.aboutContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.aboutImage, .aboutSummary{
+    grid-row: 2;
+}
+
+.aboutImage{
+    width: 550px;
+    height: 700px;
+    grid-column: 2/5;
+}
+
+.aboutSummary{
+    grid-column: 4/6;
+    align-self: center;
+}
+
+.aboutTitle{
+    grid-column: 1/4;
 }
