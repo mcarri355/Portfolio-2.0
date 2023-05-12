@@ -31,3 +31,11 @@
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+
+.h-60 {
+  height: 60%;
+}
+
+.h-40 {
+  height: 40%;
+}
