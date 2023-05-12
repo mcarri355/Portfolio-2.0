@@ -3,6 +3,6 @@ function hamburger(x){
     x.classList.toggle("change");
 }
 
-$('.menu1').click(function(){
-    $('.menu1').slideUp();
+$(window).on('load',function(){
+    $('#menu1').hide(100).show(2000);
 })
