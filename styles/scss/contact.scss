@@ -59,11 +59,6 @@ body{
 .container{
     width: 60%;
     padding: 45px;
-    border-radius: 100px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .row{
@@ -87,6 +82,7 @@ body{
     font-weight: bold;
     &::placeholder{
         color: white;
+        font-weight: normal;
     }
 }
 
@@ -108,44 +104,12 @@ body{
     }
 }
 
-// @media (max-width: 1150px){
-//     .container{
-//         width: 100%;
-//         position: absolute;
-//         left: 50%;
-//         top: 75%;
-//     }
+@media (max-width: 1150px){
+    .container{
+        width: 90%;
+    }
 
-//     body{
-//         height: 150vh;
-//     }
-// }
-
-// @media (max-width: 850px){
-//     .container{
-//         width: 100%;
-//         position: absolute;
-//         left: 50%;
-//         top: 50%;
-//     }
-// }
-
-// @media (max-width: 500px){
-//     .navTitle{
-//         display: none;
-//     }
-// }
-
-// @media (max-width: 400px) {
-//     .container {
-//         width: 100%;
-//         position: absolute;
-//         left: 50%;
-//         top: 85%;
-//     }
-
-//     body{
-//         height: 200vh;
-//     }
-    
-// }
+    body{
+        height: 185vh;
+    }
+}

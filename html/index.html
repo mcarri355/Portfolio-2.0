@@ -32,42 +32,35 @@
         </ul>
     </nav> -->
     <!-- Nav Popout -->
-    <div class="position-absolute bg-dark end-0 w-50 h-100 d-flex align-items-start justify-content-center flex-column" id="menu1">
-        <div class="stroke font largeFont ms-5 pink mb-5" onclick="window.location.href='index.html'">
-           <span>Home</span> 
-        
+    <div class="position-absolute bg-dark end-0 w-50 h-100 d-flex align-items-start justify-content-evenly flex-column font" id="menu1">
+        <div class="d-flex ms-4">
+            <span class="stroke pink" onclick="window.location.href='index.html'">Home</span>
         </div>
-        <div class="stroke font ms-5 mb-5" onclick="window.location.href='about.html'">
-           <span class="largeFont">
-                About Me
-           </span>
-            <i class="bi bi-github socials navIcon"></i>
+        <div class="d-flex ms-4 flex-row justify-content-center">
+            <span class="d-flex stroke font" onclick="window.location.href='about.html'">About Me</span>
+            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-github navIcon stroke"></i></a>
         </div>
-        <div class="stroke font ms-5 mb-5" onclick="window.location.href='contact.html'">
-            <span class="largeFont">
-                Contact
-            </span> 
-            <i class="bi bi-linkedin socials navIcon"></i>
+        <div class="d-flex ms-4">
+            <span class="stroke font" onclick="window.location.href='contact.html'">Contact</span>
+            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-twitter navIcon stroke"></i></a>
         </div>
-        <div class="stroke font ms-5 mb-5" onclick="window.location.href='project.html'">
-            <span class="largeFont">
-                Projects
-            </span>
-            <i class="bi bi-twitter socials navIcon"></i>
+        <div class="d-flex ms-4">
+            <span class="stroke font"  onclick="window.location.href='project.html'">Projects</span>
+            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-linkedin navIcon stroke"></i></a>
         </div>
-        <div class="stroke font largeFont ms-5 mb-5">
-            Resume
+        <div class="d-flex ms-4">
+            <span class="stroke font">Resume</span>
         </div>
     </div>
-    <div class="menu2 position-absolute start-0 w-50 h-60">
-        <div class="position-absolute bottom-0 ms-2">
-            <span class="font text-white stroke fs-3">Featured Project</span> 
+    <div class="position-absolute start-0 w-50 h-60" id="menu2" onclick="window.location.href='project.html'">
+        <img src="../images/nixonProject.jpg" alt="">
+        <div class="position-absolute bottom-0">
+            <span class="font text-white stroke fs-3 ms-2">Featured Project</span> 
             <br>
-            <span class="text-white fs-5">Richard Nixon Rigged Voting Machine</span>
+            <span class="text-white fs-5 ms-2">Richard Nixon Rigged Voting Machine</span>
         </div>
     </div>
-    <div class="menu3 position-absolute bg-primary bottom-0 start-0 w-50 h-40">
-    
+    <div class="position-absolute bottom-0 start-0 w-50 h-40" id="menu3">
     </div>
     <!-- Introduction To Portfolio -->
     <!-- Index Projects -->

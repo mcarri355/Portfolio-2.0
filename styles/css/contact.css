@@ -47,11 +47,6 @@ body {
 .container {
   width: 60%;
   padding: 45px;
-  border-radius: 100px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .row {
@@ -74,6 +69,7 @@ body {
 }
 .form-control::placeholder {
   color: white;
+  font-weight: normal;
 }
 
 .socials {
@@ -92,4 +88,13 @@ body {
 .submitBtn:hover {
   background-color: #5BE9B9;
   color: #6E07F3;
-}/*# sourceMappingURL=contact.css.map */
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 90%;
+  }
+  body {
+    height: 185vh;
+  }
+}
