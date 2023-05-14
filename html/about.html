@@ -14,43 +14,198 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav class="p-2 bg-black">
-        <ul class="nav justify-content-between align-items-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fs-1 font text-light" href="">Matthew Carrillo</a>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link burgerContainer" onclick="hamburger(this)">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                </div>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg mb-5 bg-dark py-3 sticky-top d-flex ">
+        <div class="container-fluid flex-row-reverse">
+            <a class="navbar-brand text-white fs-1 font" href="#"><span class="purple">M</span><span
+                    class="green">C</span>.</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande d="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-2 font" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown text-white fs-2 font">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Socials
+                        </a>
+                        <ul class="dropdown-menu text-white">
+                            <li><a class="dropdown-item" href="https://github.com/mcarri355">Github</a></li>
+                            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                            <li><a class="dropdown-item" href="#">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <section>
-        <div class="aboutContainer w-75 mx-auto my-5">
-            <div class="aboutTitle fs-2 font text-white py-2 text-center">
-                Hello, I'm Matthew Carrillo
-            </div>
-            <img class="aboutImage" src="../images/placeholder.webp" alt="">
-            <div class="aboutSummary text-center fs-5 bg-main text-light p-4">
-                Hello! My name is Matthew Carrillo! I am a skilled programmer with expertise in HTML, JavaScript, CSS, SCSS, and jQuery. With a passion for web development, I am adept at creating visually appealing and interactive websites. My knowledge of HTML allows me to structure and
-                organize content effectively, while JavaScript empowers me to bring dynamic functionality to web pages. CSS and SCSS
-                help me craft stylish and responsive designs, ensuring an optimal user experience. Additionally, my proficiency in
-                jQuery enables me to streamline development processes and enhance interactivity. As a programmer, I thrive in
-                collaborative environments and excel as a team player. I value effective communication, actively contribute to group
-                discussions, and enjoy collaborating with fellow developers to achieve shared goals. Together, we can create innovative
-                solutions and deliver outstanding web experiences.
-                <br><br>
-                <button type="button" onclick="window.location.href='project.html'" class="greenbutton btn px-4 rounded-pill fs-5 fw-bold">Projects</button>
-                <br>
+        <div id="about">
+            <div class="aboutContainer">
+                <div class="aboutRow">
+                    <div class="aboutCol1">
+                        <img src="../images/portfolioPic.jpg" alt="">
+                    </div>
+                    <div class="aboutCol2">
+                        <h1 class="subTitle stroke font">About Me</h1>
+                        <p class="fs-5">
+                            Greetings! I'm Matthew Carrillo, and I'm thrilled to have this opportunity to share more about myself. As a dedicated
+                            student at West MEC Coding, I have fully immersed myself in the captivating realm of web development. My journey has
+                            been fueled by a deep passion for creating dynamic and engaging online experiences. Through my studies, I have gained
+                            expertise in a diverse range of technologies, including JavaScript, HTML, jQuery, SCSS, and CSS.
+                            
+                            What truly sets me apart is not just my technical proficiency, but also my unwavering dedication to teamwork. I firmly
+                            believe that collaboration is the key to achieving exceptional results. Working effectively within a team is a skill I
+                            have honed over time, as I actively listen to my teammates' ideas, respect their perspectives, and embrace diverse
+                            viewpoints. By fostering an inclusive and supportive environment, I strive to create a space where everyone's unique
+                            contributions are valued and acknowledged.
+                        </p>
+                        <div class="tabTitles">
+                            <p class="tabLinks activeLink" id="skillsTitle" onclick="skills()">Skills</p>
+                            <p class="tabLinks" id="expTitle" onclick="experience()">Experience</p>
+                            <p class="tabLinks" id="eduTitle" onclick="education()">Education</p>
+                        </div>
+                        <div class="tabContents activeTab" id="skills">
+                            <ul>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">HTML</span><br>Language Used To Create
+                                    Wesbites</li>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">Javascript</span><br>Enhances Web
+                                    Interactivity And Creates Dynamic Web Applications.</li>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">CSS/SCSS</span><br>Style Sheets Used To
+                                    Design Websites</li>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">jQuery</span><br>Write Less Do More
+                                    Javascript Library</li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="experience">
+                            <ul>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">School Volunteer</span><br>2018-Present
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="education">
+                            <ul>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">Sunrise Mountain High
+                                        School</span><br>2020-Present</li>
+                                <li class=" fs-5 text-white"><span class="fs-4 stroke">West-MEC Coding</span><br>2022-Present
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Matthew Carrillo</h5>
+                    <p>I'm Matthew Carrillo, a West MEC student passionate about web development. Throughout my tenureI have
+                        become proficient in JavaScript, HTML, CSS, SCSS,
+                        and jQuery, I excel as a teamworker, known for my reliability and collaborative spirit. My goal is
+                        to leverage my
+                        skills to create outstanding web experiences and achieve collective goals with fellow team members.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Recent Projects</h5>
+                    <p>
+                        <a href="https://mcarri355.github.io/riggedElection/" class="text-white text-decoration-none">Rigged
+                            Voting Machine</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/jQuery-Profile/" class="text-white text-decoration-none">jQuery
+                            Profile</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Tic-Tac-Toe/"
+                            class="text-white text-decoration-none">Tic-Tac-Toe</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Calculator/"
+                            class="text-white text-decoration-none">Calculator</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Useful Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white text-decoration-none">About</a>
+                    </p>
+                    <p>
+                        <a href="project.html" class="text-white text-decoration-none">Projects</a>
+                    </p>
+                    <p>
+                        <a href="" class="text-white text-decoration-none">Resume</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Contact</h5>
+                    <p>
+                        <i class="bi bi-house-door-fill"></i>
+                        9955 Beverly Grove Dr.
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        Email@email.com
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        248-434-5508
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class=" col-lg-6">
+                    <p>Copyright ©2023 All Rights Reserved by <span class="green fw-bold">Me</span></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
     "></script>
     <script src="../scripts/index.js"></script>

@@ -13,31 +13,12 @@ $bg-color: #37343C;
     font-family: 'myFont';
 }
 
-// Nav Bar SCSS
-.burgerContainer {
-    display: inline-block;
-    cursor: pointer;
-    background-color: $main-color;
+.purple {
+    color: $main-color;
 }
 
-.bar {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+.green {
+    color: $secondary-color;
 }
 
 // Contact Page
@@ -61,7 +42,7 @@ body{
     padding: 45px;
 }
 
-.row{
+.contactRow{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 

@@ -6,56 +6,73 @@
   font-family: "myFont";
 }
 
-.burgerContainer {
-  display: inline-block;
+.purple {
+  color: #6E07F3;
+}
+
+.green {
+  color: #5BE9B9;
+}
+
+#about {
+  color: white;
+  padding: 0 10%;
+}
+#about .aboutRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#about .aboutRow .aboutCol1 {
+  flex-basis: 35%;
+  width: 100%;
+}
+#about .aboutRow .aboutCol1 img {
+  border-radius: 15px;
+  width: 100%;
+}
+#about .aboutRow .aboutCol2 {
+  flex-basis: 60%;
+}
+#about .aboutRow .aboutCol2 .subTitle {
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+#about .aboutRow .aboutCol2 .tabTitles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+#about .aboutRow .aboutCol2 .tabTitles .tabLinks {
+  margin-right: 50px;
+  font-size: 1.125rem;
+  font-weight: 500;
   cursor: pointer;
-  background-color: #6E07F3;
+  position: relative;
 }
-
-.bar {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
+#about .aboutRow .aboutCol2 .tabTitles .tabLinks::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #5BE9B9;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
-
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+#about .aboutRow .aboutCol2 .tabTitles .tabLinks.activeLink::after {
+  width: 50%;
 }
-
-.change .bar2 {
-  opacity: 0;
+#about .aboutRow .aboutCol2 .tabContents {
+  display: none;
 }
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+#about .aboutRow .aboutCol2 .tabContents ul li {
+  list-style: none;
 }
-
-.aboutContainer {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+#about .aboutRow .aboutCol2 .tabContents ul li span {
+  color: #5BE9B9;
 }
-
-.aboutImage, .aboutSummary {
-  grid-row: 2;
-}
-
-.aboutImage {
-  width: 600px;
-  height: 750px;
-  grid-column: 2/5;
-}
-
-.aboutSummary {
-  grid-column: 4/8;
-  align-self: center;
-}
-
-.aboutTitle {
-  grid-column: 1/4;
-  z-index: 1;
-  background-color: #6E07F3;
+#about .aboutRow .aboutCol2 .tabContents.activeTab {
+  display: block;
 }
 
 body {
@@ -64,16 +81,30 @@ body {
   background-size: cover;
 }
 
-.bg-main {
-  background-color: #6E07F3;
-}
-
-.greenbutton {
-  color: rgba(0, 0, 0, 0);
-  border: #5BE9B9 solid 10px;
-  color: white;
-}
-.greenbutton:hover {
-  background-color: #5BE9B9;
-  color: #6E07F3;
+@media (max-width: 1500px) {
+  #about .aboutRow {
+    justify-content: center;
+  }
+  #about .aboutRow .aboutCol1 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  #about .aboutRow .aboutCol2 {
+    flex-basis: 100%;
+  }
+  #about .aboutRow .aboutCol2 .subTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #about .aboutRow .aboutCol2 p {
+    text-align: center;
+  }
+  #about .aboutRow .aboutCol2 .tabTitles .tabLinks {
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+  }
+  #about .aboutRow .aboutCol2 .tabContents ul li {
+    text-align: center;
+  }
 }/*# sourceMappingURL=about.css.map */

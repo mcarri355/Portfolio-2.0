@@ -13,12 +13,280 @@
 </head>
 <body>
     <!-- Bootstrap Nav Bar -->
-    
+    <nav class="navbar navbar-expand-lg mb-5 bg-dark py-3 sticky-top d-flex ">
+        <div class="container-fluid flex-row-reverse">
+            <a class="navbar-brand text-white fs-1 font" href="#"><span class="purple">M</span><span
+                    class="green">C</span>.</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande d="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-2 font" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-2 font" href="../html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown text-white fs-2 font">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Socials
+                        </a>
+                        <ul class="dropdown-menu text-white">
+                            <li><a class="dropdown-item" href="https://github.com/mcarri355">Github</a></li>
+                            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                            <li><a class="dropdown-item" href="#">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Bootstrap Carousel -->
+    <section class="pb-5 bg1">
+        <div id="carouselExampleIndicators" class="carousel slide w-80 mx-auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="../images/nixonProject.jpg" class="d-block w-100 c-img1" alt="...">
+                    <div class="carousel-caption">
+                        <p class="fs-3">HTML, JavaScript, CSS</p>
+                        <h1 class="fs-1 font stroke">Rigged Voting Machine</h1>
+                        <br>
+                     <a href="https://mcarri355.github.io/riggedElection/">
+                        <button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button>
+                    </a>  
+                     <a href="https://github.com/mcarri355/riggedElection">
+                        <button class="greenButton rounded-pill fw-bold px-3">Repository</button>
+                    </a>   
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/nixonSS.PNG" class="d-block w-100 c-img" alt="...">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/nixonImg3.PNG" class="d-block w-100 c-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-
+    <section class="pb-5 mb-5 bg2">
+        <div id="carouselExampleCaptions" class="carousel slide w-80 mx-auto rotate">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="../images/jqueryProfile.PNG" class="d-block w-100 c-img1" alt="...">
+                    <div class="carousel-caption">
+                        <p class="fs-3">HTML, JavaScript, CSS, jQuery</p>
+                        <h1 class="fs-1 font stroke">Jquery Profile Page</h1>
+                        <br>
+                        <a href="https://mcarri355.github.io/jQuery-Profile/">
+                            <button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button>
+                        </a>
+                        <a href="https://github.com/mcarri355/jQuery-Profile">
+                            <button class="greenButton rounded-pill fw-bold px-3">Repository</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/jqueryProfile2.PNG" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/jqueryProfile3.PNG" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <br>
+    <section class="pb-5 bg1">
+        <div id="carouselExample" class="carousel slide w-80 mx-auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="../images/ticTacToe.PNG" class="d-block w-100 c-img1" alt="...">
+                    <div class="carousel-caption">
+                        <p class="fs-3">HTML, CSS, JS</p>
+                        <h1 class="fs-1 font stroke">Tic-Tac-Toe</h1>
+                        <br>
+                        <a href="https://mcarri355.github.io/Tic-Tac-Toe/">
+                            <button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button>
+                        </a>
+                        <a href="https://github.com/mcarri355/Tic-Tac-Toe">
+                            <button class="greenButton rounded-pill fw-bold px-3">Repository</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/ticTacToe2.PNG" class="d-block w-100 c-img" alt="...">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../images/ticTacToe3.PNG" class="d-block w-100 c-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Matthew Carrillo</h5>
+                    <p>I'm Matthew Carrillo, a West MEC student passionate about web development. Throughout my tenureI have
+                        become proficient in JavaScript, HTML, CSS, SCSS,
+                        and jQuery, I excel as a teamworker, known for my reliability and collaborative spirit. My goal is
+                        to leverage my
+                        skills to create outstanding web experiences and achieve collective goals with fellow team members.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Recent Projects</h5>
+                    <p>
+                        <a href="https://mcarri355.github.io/riggedElection/" class="text-white text-decoration-none">Rigged
+                            Voting Machine</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/jQuery-Profile/" class="text-white text-decoration-none">jQuery
+                            Profile</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Tic-Tac-Toe/"
+                            class="text-white text-decoration-none">Tic-Tac-Toe</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Calculator/"
+                            class="text-white text-decoration-none">Calculator</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Useful Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white text-decoration-none">About</a>
+                    </p>
+                    <p>
+                        <a href="project.html" class="text-white text-decoration-none">Projects</a>
+                    </p>
+                    <p>
+                        <a href="" class="text-white text-decoration-none">Resume</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Contact</h5>
+                    <p>
+                        <i class="bi bi-house-door-fill"></i>
+                        9955 Beverly Grove Dr.
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        Email@email.com
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        248-434-5508
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class=" col-lg-6">
+                    <p>Copyright ©2023 All Rights Reserved by <span class="green fw-bold">Me</span></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Bootstrap/JS Links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
     "></script>
+    <script src="../scripts/nav.js"></script>
 </body>
 </html>

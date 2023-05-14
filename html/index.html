@@ -14,63 +14,233 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <!-- <nav class="p-3 bg-black">
-        <ul class="nav justify-content-between align-items-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fs-1 font text-light" href="">Matthew Carrillo</a>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link burgerContainer" onclick="hamburger(this)">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
+        <nav class="navbar navbar-expand-lg mb-5 bg-dark py-3 sticky-top d-flex ">
+            <div class="container-fluid flex-row-reverse">
+                <a class="navbar-brand text-white fs-1 font" href="#"><span class="purple">M</span><span class="green">C</span>.</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expande  d="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fs-2 font"  aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-2 font" href="../html/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-2 font" href="../html/project.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-2 font" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-2 font" href="../html/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown text-white fs-2 font">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Socials
+                            </a>
+                            <ul class="dropdown-menu text-white">
+                                <li><a class="dropdown-item" href="https://github.com/mcarri355">Github</a></li>
+                                <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="#">Twitter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-        </ul>
-    </nav> -->
-    <!-- Nav Popout -->
-    <div class="position-absolute bg-dark end-0 h-100 d-flex justify-content-evenly flex-column font navPopoutList" id="menu1">
-        <div class="d-flex ms-4">
-            <span class="stroke pink" onclick="window.location.href='index.html'">Home</span>
-        </div>
-        <div class="d-flex ms-4 flex-row justify-content-between">
-            <span class="d-flex stroke font" onclick="window.location.href='about.html'">About Me</span>
-            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-github navIcon stroke me-4"></i></a>
-        </div>
-        <div class="d-flex ms-4 justify-content-between">
-            <span class="stroke font" onclick="window.location.href='contact.html'">Contact</span>
-            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-twitter navIcon stroke me-4"></i></a>
-        </div>
-        <div class="d-flex ms-4 justify-content-between">
-            <span class="stroke font"  onclick="window.location.href='project.html'">Projects</span>
-            <a href="https://github.com/mcarri355" class="d-flex"><i class="bi bi-linkedin navIcon stroke me-4"></i></a>
-        </div>
-        <div class="d-flex ms-4">
-            <span class="stroke font">Resume</span>
-        </div>
-    </div>
-    <div class="position-absolute start-0 w-50 h-60" id="menu2" onclick="window.location.href='project.html'">
-        <img src="../images/nixonProject.jpg" alt="">
-        <div class="position-absolute bottom-0">
-            <span class="font text-white stroke fs-1 ms-2">Featured Project</span> 
-            <br>
-            <span class="text-white fs-4 ms-2">Richard Nixon Rigged Voting Machine</span>
-        </div>
-    </div>
-    <div class="position-absolute bottom-0 bg-primary start-0 w-25 h-40" id="menu3">
-        <div class="position-absolute top-0 start-0 text-white ms-2">
-        </div>
-    </div>
-    <div class="position-absolute bottom-0 end-50 bg-dark w-25 h-40" id="menu4">
-        <a href="https://www.west-mec.edu/"><img src="../images/westmeclogo.png" alt=""></a>
-        <div class="fs-1 font text-white stroke position-absolute top-0 start-0 ms-2">West-MEC</div>
-    </div>
+            </div>
+        </nav>
     <!-- Introduction To Portfolio -->
+    <div id="intro">
+        <div class="introContainer font stroke">
+            Hello, My Name is 
+            <br>
+            Matthew Carrillo
+            <br>
+            I Am A 
+            <br>
+            <span class="green">Web Developer</span>
+        </div>
+    </div>
     <!-- Index Projects -->
+    <div id="projects">
+        <div class="projectContainer">
+            <h1 class="projectSubtitle font stroke text-white">My Projects</h1>
+            <div class="projectList">   
+                <div class="project">
+                    <img src="../images/richardNixonSelfie.jpg" alt="">
+                    <div class="projectLayer text-white">
+                        <h3>Rigged Voting Machine</h3>
+                        <p>Website Mimicing a voting machine that humourusly only allows the user to vote for Nixon</p>
+                        <span>
+                            <a href=""><button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button></a>
+                            <a href=""><button class="greenButton rounded-pill fw-bold px-3 mb-2">Repository</button></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../images/jquertprject.webp" alt="">
+                    <div class="projectLayer text-white">
+                        <h3>jQuery Profile Page</h3>
+                        <p>A sweet and simple project displaying my jQuery and Javascript animation skills</p>
+                        <span>
+                           <a href=""><button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button></a>
+                           <a href=""><button class="greenButton rounded-pill fw-bold px-3 mb-2">Repository</button></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../images/tictactoe project.jpg" alt="">
+                    <div class="projectLayer text-white">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>A 2 player Tic-Tac-Toe game created entirely using only HTML, JS, and CSS</p>
+                        <span>
+                            <a href=""><button class="greenButton rounded-pill fw-bold px-4 mb-2">Website</button></a>
+                            <a href=""><button class="greenButton rounded-pill fw-bold px-3 mb-2">Repository</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        <div class="text-center mt-4">
+            <button class="greenButton rounded-pill px-3 fw-bold mb-2">See More</button> 
+            <button class="greenButton rounded-pill px-4 fw-bold">Resume</button>
+        </div>
+    </div>
+    </div>
     <!-- Index About Me -->
+    <div id="about">
+        <div class="aboutContainer">
+            <div class="aboutRow">
+                <div class="aboutCol1">
+                    <img src="../images/portfolioPic.jpg" alt="">
+                </div>
+                <div class="aboutCol2">
+                    <h1 class="subTitle stroke font">About Me</h1>
+                    <p class="fs-5">
+                        Hello! I'm Matthew Carrillo, a West MEC Coding student passionate about web development. I've mastered JavaScript, HTML,
+                        jQuery, SCSS, and CSS, equipping me with the tools to create captivating web experiences. What sets me apart is my
+                        strong teamwork skills. I value collaboration, actively listening to teammates and contributing my best. Let's join
+                        forces to achieve our shared goals and shape the future of web development together.
+                    </p>
+                    <div class="tabTitles">
+                        <p class="tabLinks activeLink" id="skillsTitle" onclick="skills()">Skills</p>
+                        <p class="tabLinks" id="expTitle" onclick="experience()">Experience</p>
+                        <p class="tabLinks" id="eduTitle" onclick="education()">Education</p>
+                    </div>
+                    <div class="tabContents activeTab" id="skills">
+                        <ul>
+                            <li class=" fs-5"><span class="fs-4 tabSubTitle">HTML</span><br>Language Used To Create Wesbites</li>
+                            <li class=" fs-5"><span class="fs-4 ">Javascript</span><br>Enhances Web Interactivity And Creates Dynamic Web Applications.</li>
+                            <li class=" fs-5"><span class="fs-4 ">CSS/SCSS</span><br>Style Sheets Used To Design Websites</li>
+                            <li class=" fs-5"><span class="fs-4 ">jQuery</span><br>Write Less Do More Javascript Library</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li class=" fs-5 text-white"><span class="fs-4 ">School Volunteer</span><br>2018-Present</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li class=" fs-5 text-white"><span class="fs-4">Sunrise Mountain High School</span><br>2020-Present</li>
+                            <li class=" fs-5 text-white"><span class="fs-4">West-MEC Coding</span><br>2022-Present</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Matthew Carrillo</h5>
+                    <p>I'm Matthew Carrillo, a West MEC student passionate about web development. Throughout my tenureI have become proficient in JavaScript, HTML, CSS, SCSS,
+                    and jQuery, I excel as a teamworker, known for my reliability and collaborative spirit. My goal is to leverage my
+                    skills to create outstanding web experiences and achieve collective goals with fellow team members.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Recent Projects</h5>
+                    <p>
+                       <a href="https://mcarri355.github.io/riggedElection/" class="text-white text-decoration-none">Rigged Voting Machine</a> 
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/jQuery-Profile/" class="text-white text-decoration-none">jQuery Profile</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Tic-Tac-Toe/" class="text-white text-decoration-none">Tic-Tac-Toe</a>
+                    </p>
+                    <p>
+                        <a href="https://mcarri355.github.io/Calculator/" class="text-white text-decoration-none">Calculator</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Useful Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white text-decoration-none">About</a>
+                    </p>
+                    <p>
+                        <a href="project.html" class="text-white text-decoration-none">Projects</a>
+                    </p>
+                    <p>
+                        <a href="" class="text-white text-decoration-none">Resume</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold green">Contact</h5>
+                    <p>
+                        <i class="bi bi-house-door-fill"></i>
+                        9955 Beverly Grove Dr.
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        Email@email.com
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        248-434-5508
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class=" col-lg-6">
+                    <p>Copyright ©2023 All Rights Reserved by <span class="green fw-bold">Me</span></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-small text-white fs-4">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
     "></script>
     <script src="../scripts/index.js"></script>

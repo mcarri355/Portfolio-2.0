@@ -6,30 +6,12 @@
   font-family: "myFont";
 }
 
-.burgerContainer {
-  display: inline-block;
-  cursor: pointer;
-  background-color: #6E07F3;
+.purple {
+  color: #6E07F3;
 }
 
-.bar {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+.green {
+  color: #5BE9B9;
 }
 
 h2 {
@@ -49,7 +31,7 @@ body {
   padding: 45px;
 }
 
-.row {
+.contactRow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
